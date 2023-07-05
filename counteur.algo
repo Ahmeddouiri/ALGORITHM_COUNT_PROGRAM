@@ -1,0 +1,59 @@
+ALGORITHM three_nb_sum
+VAR
+    sentence : STRING;
+    sum : INTEGER := 0;
+    i : INTEGER;
+BEGIN
+    WRITE ("ecrire une phrase");
+    READ(sentence);
+    sum=sentence.lenth
+    READ ("le longeur de votre phrase :",sum);
+END
+
+//******************************************************************//
+
+ALGORITHM Nombre_mot
+VAR
+    sentence : STRING;
+    sum : INTEGER;
+    i : INTEGER;
+
+BEGIN
+    WRITE ("ecrire une phrase");
+    READ(sentence);
+    sum:=1;
+    for(  i = 0 from i<sentence.length , i++ )
+    {
+        
+        if(sentence[i]==" ")
+        {
+            sum := sum+1;
+        }
+    }
+
+    READ ("le nombre des mot :",sum);
+END
+
+// **************************************************************** //
+ALGORITHM Nombre_voyelle
+VAR
+    sentence : STRING;
+    sum : INTEGER;
+    i : INTEGER;
+
+BEGIN
+    WRITE ("ecrire une phrase");
+    READ(sentence);
+    sum:=0;
+    for(  i = 0 from i<sentence.length , i++ )
+
+    {
+        
+        if(sentence[i]=="a" || sentence[i]=="e" || sentence[i]=="i" || sentence[i]=="o" || sentence[i]=="u" || sentence[i]=="y")
+        {
+            sum := sum+1;
+        }
+    }
+
+    READ ("le nombre des voyelle :",sum);
+END
